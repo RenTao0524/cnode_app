@@ -9,6 +9,7 @@ import './src/pages/collection.dart';
 import './src/Tutorial/helloFlutter.dart';
 import './src/Tutorial/layout.dart';
 import './src/Tutorial/TutorialHome.dart';
+import './src/Tutorial/basicWidget.dart';
 
 void main() {
   // runApp(new HelloFlutter());
@@ -16,10 +17,11 @@ void main() {
   //   title: 'My app', // used by the OS task switcher
   //   home: new MyScaffold(),
   // ))
-  runApp(new MaterialApp(
-    title: 'Flutter Tutorial',
-    home: new TutorialHome(),
-  ));
+  // runApp(new MaterialApp(
+  //   title: 'Flutter Tutorial',
+  //   home: new TutorialHome(),
+  // ));
+  runApp(new BasicWidget());
   // runApp(MyApp());
 }
 

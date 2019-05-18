@@ -3,9 +3,14 @@ import './src/pages/home.dart';
 import './src/pages/message.dart';
 import './src/pages/user.dart';
 import './src/pages/collection.dart';
+/**
+ * 教程demo
+ */
+import './src/Tutorial/helloFlutter.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(new HelloFlutter());
+  // runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

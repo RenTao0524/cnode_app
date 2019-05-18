@@ -7,9 +7,19 @@ import './src/pages/collection.dart';
  * 教程demo
  */
 import './src/Tutorial/helloFlutter.dart';
+import './src/Tutorial/layout.dart';
+import './src/Tutorial/TutorialHome.dart';
 
 void main() {
-  runApp(new HelloFlutter());
+  // runApp(new HelloFlutter());
+  // runApp(new MaterialApp(
+  //   title: 'My app', // used by the OS task switcher
+  //   home: new MyScaffold(),
+  // ))
+  runApp(new MaterialApp(
+    title: 'Flutter Tutorial',
+    home: new TutorialHome(),
+  ));
   // runApp(MyApp());
 }
 
@@ -19,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'cnode app',
       home: HomePage(),
-      routes: <String, WidgetBuilder> {
+      routes: <String, WidgetBuilder>{
         '/home': (BuildContext context) => new HomePage(),
         '/collection': (BuildContext context) => new Collection(),
         '/message': (BuildContext context) => new Message(),
